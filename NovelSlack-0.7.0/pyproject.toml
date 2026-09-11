@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "novelslack"
+version = "0.7.0"
+description = "Cross-platform terminal novel reader with a low-load system maintenance dashboard."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+keywords = [
+    "terminal",
+    "novel-reader",
+    "txt-reader",
+    "system-maintenance",
+    "windows",
+    "macos",
+    "linux",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Terminals",
+]
+dependencies = [
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+novelslack = "novelslack.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["novelslack*"]
