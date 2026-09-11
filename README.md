@@ -43,28 +43,7 @@
 - 章节跳转
 - 章节索引缓存
 - 窗口大小动态适配
-- **章节边界分页**：新章节一定从新页面顶部开始
 
-章节边界分页示例：
-
-```text
-上一章最后一页
-│ ……正文
-│ ……正文
-│ 本章最后一句
-
-[D / Space] 下一页
-```
-
-继续翻页后：
-
-```text
-第五十章 新章节标题
-│ 新章节第一段
-│ 新章节第二段
-```
-
-不会在上一章最后一页提前露出下一章标题。
 
 ### 🖥 系统维护面板
 
@@ -129,7 +108,7 @@ novelslack --version
 开始阅读：
 
 ```powershell
-novelslack --text "D:\Books\book.txt"
+novelslack --text "D:\Books\book.txt"（你的txt文件路径）
 ```
 
 ### macOS / Linux
@@ -149,7 +128,7 @@ novelslack --version
 开始阅读：
 
 ```bash
-novelslack --text ~/Downloads/book.txt
+novelslack --text ~/Downloads/book.txt （你的txt文件路径）
 ```
 
 如果系统 Python 不允许直接安装用户包，建议先创建虚拟环境。
@@ -366,7 +345,7 @@ novelslack --version
 Start reading:
 
 ```powershell
-novelslack --text "D:\Books\book.txt"
+novelslack --text "D:\Books\book.txt" 
 ```
 
 ### macOS / Linux
